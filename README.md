@@ -3,7 +3,7 @@ This repository is for testing the mapping of abstract classes to Elasticsearch.
 as Class Libraries with Unit-Test in case someone want's to add the search or I learn it myself at some point.
 
 # Usage
-Insert the relevant connectionstrings in Operations class in the following projects:
+Insert the relevant connection information in Operations class in the following projects:
 - 6.6.0
 - 7.0.0
 - Workaround
@@ -11,7 +11,9 @@ Insert the relevant connectionstrings in Operations class in the following proje
 # Problems:
 1: I am unable to get the Search Query to work with a Type in both 6.6.0 and 7.0.0. If I search like this:
 
+```csharp
 client.Search<LinkActor>(q => q.MatchAll())
+```
 
 I get a:
 6.6.0
@@ -24,8 +26,9 @@ Other Types (fx Person) or dynamic either gives empty results or results with em
 
 2: I keep getting "System.IO.IOException: Unable to write data to the transport connection:" forcing me to restart VS2019.
 
-# Results 
+# Results
 - 6.6.0: 
+```
 /test/_search?q=Description
 
 {
@@ -40,8 +43,9 @@ Other Types (fx Person) or dynamic either gives empty results or results with em
         }
     }
 }
-
+```
 - 7.0.0:
+```
 /test/_search?q=Description
 {
     "_index": "test",
@@ -54,8 +58,9 @@ Other Types (fx Person) or dynamic either gives empty results or results with em
         }
     }
 }
-
+```
 - Workaround:
+```
 /test/_search?q=Description
 {
     "_index": "test",
@@ -69,3 +74,4 @@ Other Types (fx Person) or dynamic either gives empty results or results with em
         }
     }
 }
+```
