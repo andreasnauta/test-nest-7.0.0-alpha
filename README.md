@@ -24,7 +24,7 @@ Elasticsearch.Net.UnexpectedElasticsearchClientException: generated serializer f
 
 Other Types (fx Person) or dynamic either gives empty results or results with empty documents.
 
-2: I keep getting "System.IO.IOException: Unable to write data to the transport connection:" forcing me to restart VS2019.
+2: I keep getting "System.IO.IOException: Unable to write data to the transport connection:" after some time forcing me to restart VS2019. Something is not closed correctly.
 
 # Results
 - 6.6.0: 
