@@ -8,7 +8,7 @@ Insert the relevant connectionstrings in Operations class in the following proje
 - 7.0.0
 - Workaround
 
-#Problems:
+# Problems:
 1: I am unable to get the Search Query to work with a Type in both 6.6.0 and 7.0.0. If I search like this:
 
 client.Search<LinkActor>(q => q.MatchAll())
@@ -24,7 +24,7 @@ Other Types (fx Person) or dynamic either gives empty results or results with em
 
 2: I keep getting "System.IO.IOException: Unable to write data to the transport connection:" forcing me to restart VS2019.
 
-#Results 
+# Results 
 - 6.6.0: 
 /test/_search?q=Description
 
