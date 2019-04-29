@@ -15,11 +15,11 @@ Insert the relevant connection information in Operations class in the following 
 client.Search<LinkActor>(q => q.MatchAll())
 ```
 
-I get a:
-6.6.0
+I get a the following results:
+- 6.6.0
 Could not create an instance of type Common.Classes.Actor.
 
-7.0.0:
+- 7.0.0:
 Elasticsearch.Net.UnexpectedElasticsearchClientException: generated serializer for Actor does not support deserialize.
 
 Other Types (fx Person) or dynamic either gives empty results or results with empty documents.
