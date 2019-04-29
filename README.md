@@ -1,6 +1,6 @@
 # Introduction
 This repository is for testing the mapping of abstract classes to Elasticsearch. I don't understand NEST or Elastic fully (which is probably obvious), but I hope it helps. There is no Assertions, as I don't know how to search well enough in NEST (see Problems), but choose to create the project 
-as Class Libraries with Unit-Test in case someone want's to add the search or I learn it myself at some point.
+as Class Libraries with Unit-Test in case someone wants to add the search or I learn it myself at some point.
 
 # Usage
 Insert the relevant connection information in Operations class in the following projects:
